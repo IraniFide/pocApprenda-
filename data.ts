@@ -1,0 +1,328 @@
+import { type Question, Subject, Level } from './types';
+
+export const ALL_QUESTIONS: Question[] = [
+  // Math Level 1 - Updated with shapes
+  {
+    id: 'm1_add_1',
+    subject: Subject.Math,
+    level: Level.One,
+    prompt: 'No quadrado azul há 2 carros e no círculo amarelo há 3 carros. Quantos carros existem ao todo?',
+    illustration: { src: 'data-img/generated-image.png', alt: 'Um quadrado azul com 2 carros e um círculo amarelo com 3 carros.' },
+    options: [
+      { value: '4', color: 'bg-blue-500' },
+      { value: '5', color: 'bg-green-500' },
+      { value: '6', color: 'bg-red-500' },
+    ],
+    correctAnswer: '5',
+    hint: 'Conte todos os carros juntos!',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2RtcTlobWJtemU3c2ZkdTFpODlnY3JwN2s0ZzR3a2JldXo4cHg4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btXMLt3B38BvP3y/giphy.gif', alt: 'Animação de confetes coloridos caindo.' },
+  },
+  {
+    id: 'm1_sub_1',
+    subject: Subject.Math,
+    level: Level.One,
+    prompt: 'Em um retângulo verde há 7 bananas. Se você comer 3, quantas bananas restam?',
+    illustration: { src: 'data-img/Retângulo verde com sete bananas ajustadas.png', alt: 'Um retângulo verde com 7 bananas.' },
+    options: [
+      { value: '4', color: 'bg-yellow-500' },
+      { value: '5', color: 'bg-purple-500' },
+      { value: '3', color: 'bg-pink-500' },
+    ],
+    correctAnswer: '4',
+    hint: 'Comece com 7 e conte três para trás.',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExczJ5ZmZ5b2I0eXp2cGl4dGxtaXFjcGtvcDVocG04NHN6emQ1eHFuNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tOZ42Mg6pbTUPHW/giphy.gif', alt: 'Animação de estrelas brilhando.' },
+  },
+  {
+    id: 'm1_add_2',
+    subject: Subject.Math,
+    level: Level.One,
+    prompt: 'No triângulo vermelho há 4 estrelas e no quadrado roxo há 5 estrelas. Quantas estrelas há no total?',
+    illustration: { src: 'https://picsum.photos/seed/m1_add_2/400/200', alt: 'Um triângulo com 4 estrelas e um quadrado com 5 estrelas.' },
+    options: [ { value: '8', color: 'bg-blue-500' }, { value: '9', color: 'bg-green-500' }, { value: '10', color: 'bg-red-500' } ],
+    correctAnswer: '9',
+    hint: 'Junte as estrelas dos dois grupos.',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2RtcTlobWJtemU3c2ZkdTFpODlnY3JwN2s0ZzR3a2JldXo4cHg4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btXMLt3B38BvP3y/giphy.gif', alt: 'Animação de confetes.' }
+  },
+  {
+    id: 'm1_sub_2',
+    subject: Subject.Math,
+    level: Level.One,
+    prompt: 'Em um círculo azul há 10 bolinhas. Se 4 bolinhas rolarem para fora, quantas ficam?',
+    illustration: { src: 'https://picsum.photos/seed/m1_sub_2/400/200', alt: 'Um círculo azul com 10 bolinhas, 4 rolando para fora.' },
+    options: [ { value: '6', color: 'bg-yellow-500' }, { value: '7', color: 'bg-purple-500' }, { value: '5', color: 'bg-pink-500' } ],
+    correctAnswer: '6',
+    hint: 'De 10, tire 4.',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExczJ5ZmZ5b2I0eXp2cGl4dGxtaXFjcGtvcDVocG04NHN6emQ1eHFuNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tOZ42Mg6pbTUPHW/giphy.gif', alt: 'Animação de estrelas.' }
+  },
+  {
+    id: 'm1_add_3',
+    subject: Subject.Math,
+    level: Level.One,
+    prompt: 'Em um vaso quadrado há 3 flores. Em outro vaso redondo há 6 flores. Quantas flores há nos dois vasos juntos?',
+    illustration: { src: 'https://picsum.photos/seed/m1_add_3/400/200', alt: 'Um vaso quadrado com 3 flores e um vaso redondo com 6 flores.' },
+    options: [ { value: '9', color: 'bg-blue-500' }, { value: '8', color: 'bg-green-500' }, { value: '10', color: 'bg-red-500' } ],
+    correctAnswer: '9',
+    hint: 'Some 3 mais 6.',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2RtcTlobWJtemU3c2ZkdTFpODlnY3JwN2s0ZzR3a2JldXo4cHg4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btXMLt3B38BvP3y/giphy.gif', alt: 'Animação de confetes.' }
+  },
+  {
+    id: 'm1_sub_3',
+    subject: Subject.Math,
+    level: Level.One,
+    prompt: 'Uma caixa retangular tem 8 lápis. Se você usar 2, quantos sobram?',
+    illustration: { src: 'https://picsum.photos/seed/m1_sub_3/400/200', alt: 'Caixa retangular com 8 lápis.' },
+    options: [ { value: '5', color: 'bg-yellow-500' }, { value: '6', color: 'bg-purple-500' }, { value: '7', color: 'bg-pink-500' } ],
+    correctAnswer: '6',
+    hint: 'Comece com 8 e tire 2.',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExczJ5ZmZ5b2I0eXp2cGl4dGxtaXFjcGtvcDVocG04NHN6emQ1eHFuNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tOZ42Mg6pbTUPHW/giphy.gif', alt: 'Animação de estrelas.' }
+  },
+  {
+    id: 'm1_add_4',
+    subject: Subject.Math,
+    level: Level.One,
+    prompt: 'Em um prato quadrado há 5 biscoitos. Em um prato redondo há 5 biscoitos. Qual o total de biscoitos?',
+    illustration: { src: 'https://picsum.photos/seed/m1_add_4/400/200', alt: 'Prato quadrado com 5 biscoitos e prato redondo com 5 biscoitos.' },
+    options: [ { value: '10', color: 'bg-blue-500' }, { value: '9', color: 'bg-green-500' }, { value: '11', color: 'bg-red-500' } ],
+    correctAnswer: '10',
+    hint: 'Junte 5 e 5.',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2RtcTlobWJtemU3c2ZkdTFpODlnY3JwN2s0ZzR3a2JldXo4cHg4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btXMLt3B38BvP3y/giphy.gif', alt: 'Animação de confetes.' }
+  },
+  {
+    id: 'm1_sub_4',
+    subject: Subject.Math,
+    level: Level.One,
+    prompt: 'Havia 9 pássaros em um telhado triangular. 5 voaram. Quantos ficaram?',
+    illustration: { src: 'https://picsum.photos/seed/m1_sub_4/400/200', alt: 'Telhado triangular com 9 pássaros, 5 voando para longe.' },
+    options: [ { value: '3', color: 'bg-yellow-500' }, { value: '4', color: 'bg-purple-500' }, { value: '5', color: 'bg-pink-500' } ],
+    correctAnswer: '4',
+    hint: 'Tire 5 de 9.',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExczJ5ZmZ5b2I0eXp2cGl4dGxtaXFjcGtvcDVocG04NHN6emQ1eHFuNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tOZ42Mg6pbTUPHW/giphy.gif', alt: 'Animação de estrelas.' }
+  },
+  {
+    id: 'm1_add_5',
+    subject: Subject.Math,
+    level: Level.One,
+    prompt: 'No círculo verde há 1 lápis. No quadrado vermelho há 6 lápis. Quantos lápis ao todo?',
+    illustration: { src: 'https://picsum.photos/seed/m1_add_5/400/200', alt: 'Círculo verde com 1 lápis e quadrado vermelho com 6 lápis.' },
+    options: [ { value: '7', color: 'bg-blue-500' }, { value: '6', color: 'bg-green-500' }, { value: '8', color: 'bg-red-500' } ],
+    correctAnswer: '7',
+    hint: 'Some 1 e 6.',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2RtcTlobWJtemU3c2ZkdTFpODlnY3JwN2s0ZzR3a2JldXo4cHg4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btXMLt3B38BvP3y/giphy.gif', alt: 'Animação de confetes.' }
+  },
+  {
+    id: 'm1_sub_5',
+    subject: Subject.Math,
+    level: Level.One,
+    prompt: 'Uma cesta retangular continha 12 maçãs. 2 foram comidas. Quantas maçãs restaram?',
+    illustration: { src: 'https://picsum.photos/seed/m1_sub_5/400/200', alt: 'Cesta retangular com 12 maçãs.' },
+    options: [ { value: '9', color: 'bg-yellow-500' }, { value: '10', color: 'bg-purple-500' }, { value: '11', color: 'bg-pink-500' } ],
+    correctAnswer: '10',
+    hint: 'De 12, tire 2.',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExczJ5ZmZ5b2I0eXp2cGl4dGxtaXFjcGtvcDVocG04NHN6emQ1eHFuNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tOZ42Mg6pbTUPHW/giphy.gif', alt: 'Animação de estrelas.' }
+  },
+
+
+  // Math Level 2 - Updated with shapes
+  {
+    id: 'm2_mul_1',
+    subject: Subject.Math,
+    level: Level.Two,
+    prompt: 'Há 3 caixas quadradas. Cada caixa tem 4 lápis dentro. Quantos lápis há no total?',
+    illustration: { src: 'https://picsum.photos/seed/m2_mul_1/400/200', alt: 'Três caixas quadradas, cada uma com 4 lápis dentro.' },
+    options: [
+      { value: '10', color: 'bg-blue-500' },
+      { value: '12', color: 'bg-green-500' },
+      { value: '14', color: 'bg-red-500' },
+    ],
+    correctAnswer: '12',
+    hint: 'Você pode somar 4 + 4 + 4, ou multiplicar 3 x 4.',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZrc3RtcDVqejk0ZzRkOXdmeDc5ZXQ2eTN2Z3RnaGd4dGRuOTY5dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5K8oh5p64y2SA/giphy.gif', alt: 'Animação estilo mangá com linhas de velocidade.' },
+  },
+  {
+    id: 'm2_div_1',
+    subject: Subject.Math,
+    level: Level.Two,
+    prompt: 'Temos 15 adesivos para dividir igualmente em 3 páginas retangulares. Quantos adesivos cada página terá?',
+    illustration: { src: 'https://picsum.photos/seed/m2_div_1/400/200', alt: '15 adesivos sendo divididos em 3 páginas.' },
+    options: [
+      { value: '4', color: 'bg-yellow-500' },
+      { value: '5', color: 'bg-purple-500' },
+      { value: '6', color: 'bg-pink-500' },
+    ],
+    correctAnswer: '5',
+    hint: 'Quanto é 15 dividido por 3?',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3h0NGRmemQ0cDd0ZWN5cjJ2d2pmbXluYTU3ZGx6Z2JtdnpkZ2NtaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Beurj4W_w65gI/giphy.gif', alt: 'Animação de personagem de mangá comemorando.' },
+  },
+  {
+    id: 'm2_mul_2',
+    subject: Subject.Math,
+    level: Level.Two,
+    prompt: 'Existem 5 ninhos de passarinho circulares. Cada ninho tem 2 ovos. Quantos ovos existem ao todo?',
+    illustration: { src: 'https://picsum.photos/seed/m2_mul_2/400/200', alt: '5 ninhos circulares com 2 ovos cada.' },
+    options: [ { value: '8', color: 'bg-blue-500' }, { value: '10', color: 'bg-green-500' }, { value: '12', color: 'bg-red-500' } ],
+    correctAnswer: '10',
+    hint: 'É como contar de 2 em 2, cinco vezes.',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZrc3RtcDVqejk0ZzRkOXdmeDc5ZXQ2eTN2Z3RnaGd4dGRuOTY5dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5K8oh5p64y2SA/giphy.gif', alt: 'Animação mangá.' }
+  },
+  {
+    id: 'm2_div_2',
+    subject: Subject.Math,
+    level: Level.Two,
+    prompt: '20 doces foram divididos igualmente entre 4 potes triangulares. Quantos doces cada pote recebeu?',
+    illustration: { src: 'https://picsum.photos/seed/m2_div_2/400/200', alt: '20 doces e 4 potes triangulares.' },
+    options: [ { value: '4', color: 'bg-yellow-500' }, { value: '5', color: 'bg-purple-500' }, { value: '6', color: 'bg-pink-500' } ],
+    correctAnswer: '5',
+    hint: 'Qual número vezes 4 dá 20?',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3h0NGRmemQ0cDd0ZWN5cjJ2d2pmbXluYTU3ZGx6Z2JtdnpkZ2NtaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Beurj4W_w65gI/giphy.gif', alt: 'Animação mangá.' }
+  },
+  {
+    id: 'm2_mul_3',
+    subject: Subject.Math,
+    level: Level.Two,
+    prompt: 'Em uma estante há 2 prateleiras retangulares. Cada prateleira tem 8 livros. Quantos livros há na estante?',
+    illustration: { src: 'https://picsum.photos/seed/m2_mul_3/400/200', alt: 'Estante com 2 prateleiras e 8 livros em cada.' },
+    options: [ { value: '14', color: 'bg-blue-500' }, { value: '16', color: 'bg-green-500' }, { value: '18', color: 'bg-red-500' } ],
+    correctAnswer: '16',
+    hint: 'Some 8 + 8 ou multiplique 2 x 8.',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZrc3RtcDVqejk0ZzRkOXdmeDc5ZXQ2eTN2Z3RnaGd4dGRuOTY5dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5K8oh5p64y2SA/giphy.gif', alt: 'Animação mangá.' }
+  },
+  {
+    id: 'm2_div_3',
+    subject: Subject.Math,
+    level: Level.Two,
+    prompt: 'Um fazendeiro colheu 18 cenouras e quer dividi-las em 3 cestos quadrados. Quantas cenouras por cesto?',
+    illustration: { src: 'https://picsum.photos/seed/m2_div_3/400/200', alt: '18 cenouras e 3 cestos quadrados.' },
+    options: [ { value: '6', color: 'bg-yellow-500' }, { value: '7', color: 'bg-purple-500' }, { value: '5', color: 'bg-pink-500' } ],
+    correctAnswer: '6',
+    hint: '18 dividido por 3 é igual a quanto?',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3h0NGRmemQ0cDd0ZWN5cjJ2d2pmbXluYTU3ZGx6Z2JtdnpkZ2NtaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Beurj4W_w65gI/giphy.gif', alt: 'Animação mangá.' }
+  },
+  {
+    id: 'm2_mul_4',
+    subject: Subject.Math,
+    level: Level.Two,
+    prompt: 'Uma cartela de ovos retangular tem 2 fileiras de 6 ovos cada. Quantos ovos no total?',
+    illustration: { src: 'https://picsum.photos/seed/m2_add_2/400/200', alt: 'Cartela retangular com 2 fileiras de 6 ovos.' },
+    options: [ { value: '10', color: 'bg-blue-500' }, { value: '12', color: 'bg-green-500' }, { value: '14', color: 'bg-red-500' } ],
+    correctAnswer: '12',
+    hint: '2 vezes 6.',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZrc3RtcDVqejk0ZzRkOXdmeDc5ZXQ2eTN2Z3RnaGd4dGRuOTY5dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5K8oh5p64y2SA/giphy.gif', alt: 'Animação mangá.' }
+  },
+  {
+    id: 'm2_div_4',
+    subject: Subject.Math,
+    level: Level.Two,
+    prompt: 'Temos 24 fatias de pizza para dividir entre 8 pratos redondos. Quantas fatias por prato?',
+    illustration: { src: 'https://picsum.photos/seed/m2_sub_2/400/200', alt: '24 fatias de pizza e 8 pratos redondos.' },
+    options: [ { value: '3', color: 'bg-yellow-500' }, { value: '4', color: 'bg-purple-500' }, { value: '5', color: 'bg-pink-500' } ],
+    correctAnswer: '3',
+    hint: 'Qual o resultado de 24 dividido por 8?',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3h0NGRmemQ0cDd0ZWN5cjJ2d2pmbXluYTU3ZGx6Z2JtdnpkZ2NtaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Beurj4W_w65gI/giphy.gif', alt: 'Animação mangá.' }
+  },
+  {
+    id: 'm2_mul_5',
+    subject: Subject.Math,
+    level: Level.Two,
+    prompt: 'Em um jardim, há 7 canteiros quadrados com 3 flores em cada um. Quantas flores no total?',
+    illustration: { src: 'https://picsum.photos/seed/m2_mul_5/400/200', alt: '7 canteiros quadrados com 3 flores em cada.' },
+    options: [ { value: '20', color: 'bg-blue-500' }, { value: '21', color: 'bg-green-500' }, { value: '24', color: 'bg-red-500' } ],
+    correctAnswer: '21',
+    hint: 'Lembre da tabuada do 7 ou do 3.',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZrc3RtcDVqejk0ZzRkOXdmeDc5ZXQ2eTN2Z3RnaGd4dGRuOTY5dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5K8oh5p64y2SA/giphy.gif', alt: 'Animação mangá.' }
+  },
+  {
+    id: 'm2_div_5',
+    subject: Subject.Math,
+    level: Level.Two,
+    prompt: 'Uma professora tem 30 adesivos para distribuir para 5 alunos em uma mesa redonda. Quantos adesivos cada um ganha?',
+    illustration: { src: 'https://picsum.photos/seed/m2_div_5/400/200', alt: 'Mesa redonda com 5 alunos e 30 adesivos.' },
+    options: [ { value: '5', color: 'bg-yellow-500' }, { value: '6', color: 'bg-purple-500' }, { value: '7', color: 'bg-pink-500' } ],
+    correctAnswer: '6',
+    hint: '30 dividido por 5.',
+    celebrationMedia: { type: 'video', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3h0NGRmemQ0cDd0ZWN5cjJ2d2pmbXluYTU3ZGx6Z2JtdnpkZ2NtaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Beurj4W_w65gI/giphy.gif', alt: 'Animação mangá.' }
+  },
+
+
+  // Portuguese Level 1
+  {
+    id: 'p1_verb_1',
+    subject: Subject.Portuguese,
+    level: Level.One,
+    prompt: 'A menina está com uma mangueira e água sai em direção ao jardim. Ela vai ____________.',
+    illustration: { src: 'https://picsum.photos/seed/p1_verb_1/400/200', alt: 'Menina segurando uma mangueira e molhando as flores de um jardim.' },
+    options: [
+      { value: 'dormir', color: 'bg-blue-500' },
+      { value: 'regar', color: 'bg-green-500' },
+      { value: 'escrever', color: 'bg-red-500' },
+    ],
+    correctAnswer: 'regar',
+    hint: 'O que se faz com uma mangueira no jardim?',
+    celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3k3Z2w4eWRscG5obXN4eXJyM2tqdG5la2Q2bDNyZHd5aGNoanoybSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ov9jE31AN2CPaV32w/giphy.gif', alt: 'GIF de flores crescendo rapidamente.' },
+  },
+  {
+    id: 'p1_verb_2',
+    subject: Subject.Portuguese,
+    level: Level.One,
+    prompt: 'O menino senta na cadeira com um livro aberto nas mãos. Ele vai ____________.',
+    illustration: { src: 'https://picsum.photos/seed/p1_verb_2/400/200', alt: 'Menino sentado lendo um livro.' },
+    options: [
+      { value: 'correr', color: 'bg-yellow-500' },
+      { value: 'ler', color: 'bg-purple-500' },
+      { value: 'pular', color: 'bg-pink-500' },
+    ],
+    correctAnswer: 'ler',
+    hint: 'O que se faz com um livro?',
+    celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDBud3A5aGZobmZ6czl5aXNjaGFoZHYzMG9jbjJ5bWlpbWhjcTlkaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BofJowwKS2LbG/giphy.gif', alt: 'GIF de um livro abrindo com magia.' },
+  },
+  // Add 8 more for Portuguese Level 1
+  { id: 'p1_verb_3', subject: Subject.Portuguese, level: Level.One, prompt: 'A cozinheira mexe uma panela no fogão. Ela vai ____________.', illustration: { src: 'https://picsum.photos/seed/p1_verb_3/400/200', alt: 'Cozinheira mexendo uma panela.' }, options: [ { value: 'cantar', color: 'bg-blue-500' }, { value: 'cozinhar', color: 'bg-green-500' }, { value: 'nadar', color: 'bg-red-500' } ], correctAnswer: 'cozinhar', hint: 'O que se faz com uma panela no fogão?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3k3Z2w4eWRscG5obXN4eXJyM2tqdG5la2Q2bDNyZHd5aGNoanoybSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ov9jE31AN2CPaV32w/giphy.gif', alt: 'GIF de comida.' } },
+  { id: 'p1_verb_4', subject: Subject.Portuguese, level: Level.One, prompt: 'O pintor segura um pincel sujo de tinta na frente de uma tela branca. Ele vai ____________.', illustration: { src: 'https://picsum.photos/seed/p1_verb_4/400/200', alt: 'Pintor com pincel e tela.' }, options: [ { value: 'pintar', color: 'bg-yellow-500' }, { value: 'dançar', color: 'bg-purple-500' }, { value: 'comer', color: 'bg-pink-500' } ], correctAnswer: 'pintar', hint: 'Para que serve um pincel e uma tela?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDBud3A5aGZobmZ6czl5aXNjaGFoZHYzMG9jbjJ5bWlpbWhjcTlkaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BofJowwKS2LbG/giphy.gif', alt: 'GIF de um arco-íris.' } },
+  { id: 'p1_verb_5', subject: Subject.Portuguese, level: Level.One, prompt: 'O atleta está na linha de partida de uma pista. Ele vai ____________.', illustration: { src: 'https://picsum.photos/seed/p1_verb_5/400/200', alt: 'Atleta em uma pista de corrida.' }, options: [ { value: 'dormir', color: 'bg-blue-500' }, { value: 'estudar', color: 'bg-green-500' }, { value: 'correr', color: 'bg-red-500' } ], correctAnswer: 'correr', hint: 'O que se faz em uma pista de corrida?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3k3Z2w4eWRscG5obXN4eXJyM2tqdG5la2Q2bDNyZHd5aGNoanoybSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ov9jE31AN2CPaV32w/giphy.gif', alt: 'GIF de um troféu.' } },
+  { id: 'p1_verb_6', subject: Subject.Portuguese, level: Level.One, prompt: 'O bebê está de olhos fechados em um berço. Ele vai ____________.', illustration: { src: 'https://picsum.photos/seed/p1_verb_6/400/200', alt: 'Bebê dormindo no berço.' }, options: [ { value: 'brincar', color: 'bg-yellow-500' }, { value: 'dormir', color: 'bg-purple-500' }, { value: 'chorar', color: 'bg-pink-500' } ], correctAnswer: 'dormir', hint: 'O que o bebê faz no berço de olhos fechados?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDBud3A5aGZobmZ6czl5aXNjaGFoZHYzMG9jbjJ5bWlpbWhjcTlkaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BofJowwKS2LbG/giphy.gif', alt: 'GIF de uma lua com estrelas.' } },
+  { id: 'p1_verb_7', subject: Subject.Portuguese, level: Level.One, prompt: 'A criança está com fones de ouvido e balançando a cabeça. Ela vai ____________ música.', illustration: { src: 'https://picsum.photos/seed/p1_verb_7/400/200', alt: 'Criança com fones de ouvido.' }, options: [ { value: 'beber', color: 'bg-blue-500' }, { value: 'ouvir', color: 'bg-green-500' }, { value: 'desenhar', color: 'bg-red-500' } ], correctAnswer: 'ouvir', hint: 'Para que servem os fones de ouvido?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3k3Z2w4eWRscG5obXN4eXJyM2tqdG5la2Q2bDNyZHd5aGNoanoybSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ov9jE31AN2CPaV32w/giphy.gif', alt: 'GIF de notas musicais.' } },
+  { id: 'p1_verb_8', subject: Subject.Portuguese, level: Level.One, prompt: 'O cachorro abana o rabo perto da sua tigela de comida. Ele vai ____________.', illustration: { src: 'https://picsum.photos/seed/p1_verb_8/400/200', alt: 'Cachorro perto da tigela de comida.' }, options: [ { value: 'latir', color: 'bg-yellow-500' }, { value: 'passear', color: 'bg-purple-500' }, { value: 'comer', color: 'bg-pink-500' } ], correctAnswer: 'comer', hint: 'O que os cachorros fazem quando estão com fome?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDBud3A5aGZobmZ6czl5aXNjaGFoZHYzMG9jbjJ5bWlpbWhjcTlkaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BofJowwKS2LbG/giphy.gif', alt: 'GIF de um osso de cachorro.' } },
+  { id: 'p1_verb_9', subject: Subject.Portuguese, level: Level.One, prompt: 'O menino está de pijama e com uma escova de dentes na mão. Ele vai ____________ os dentes.', illustration: { src: 'https://picsum.photos/seed/p1_verb_9/400/200', alt: 'Menino de pijama com escova de dentes.' }, options: [ { value: 'brincar', color: 'bg-blue-500' }, { value: 'escovar', color: 'bg-green-500' }, { value: 'ler', color: 'bg-red-500' } ], correctAnswer: 'escovar', hint: 'O que fazemos com a escova de dentes antes de dormir?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3k3Z2w4eWRscG5obXN4eXJyM2tqdG5la2Q2bDNyZHd5aGNoanoybSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ov9jE31AN2CPaV32w/giphy.gif', alt: 'GIF de um dente brilhando.' } },
+  { id: 'p1_verb_10', subject: Subject.Portuguese, level: Level.One, prompt: 'O avião está na pista acelerando. Ele vai ____________.', illustration: { src: 'https://picsum.photos/seed/p1_verb_10/400/200', alt: 'Avião na pista de decolagem.' }, options: [ { value: 'pousar', color: 'bg-yellow-500' }, { value: 'decolar', color: 'bg-purple-500' }, { value: 'parar', color: 'bg-pink-500' } ], correctAnswer: 'decolar', hint: 'O que o avião faz no início de uma viagem?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDBud3A5aGZobmZ6czl5aXNjaGFoZHYzMG9jbjJ5bWlpbWhjcTlkaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BofJowwKS2LbG/giphy.gif', alt: 'GIF de um avião voando pelo céu.' } },
+
+  // Portuguese Level 2
+  {
+    id: 'p2_logic_1',
+    subject: Subject.Portuguese,
+    level: Level.Two,
+    prompt: 'O médico _________ o paciente.',
+    illustration: { src: 'https://picsum.photos/seed/p2_logic_1/400/200', alt: 'Ilustração estilo mangá de um médico em seu consultório.' },
+    options: [
+      { value: 'pinta', color: 'bg-blue-500', illustration: 'https://picsum.photos/seed/p2_logic_1_op1/100/100', alt: 'Mangá de um pintor com um pincel.' },
+      { value: 'examina', color: 'bg-green-500', illustration: 'https://picsum.photos/seed/p2_logic_1_op2/100/100', alt: 'Mangá de um médico com um estetoscópio.' },
+      { value: 'dirige', color: 'bg-red-500', illustration: 'https://picsum.photos/seed/p2_logic_1_op3/100/100', alt: 'Mangá de um motorista ao volante.' },
+    ],
+    correctAnswer: 'examina',
+    hint: 'Qual é a principal tarefa de um médico com um paciente?',
+    celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3N5dDZna254Mm52d3M2ajU4bW1jZ2pkeGFoY2Jtdm9zZ3owM2I0eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6AfB6p14o4dfa/giphy.gif', alt: 'GIF de personagem de mangá dando um joinha.' },
+  },
+  {
+    id: 'p2_logic_2',
+    subject: Subject.Portuguese,
+    level: Level.Two,
+    prompt: 'O gato _________ o rato.',
+    illustration: { src: 'https://picsum.photos/seed/p2_logic_2/400/200', alt: 'Ilustração estilo mangá de um gato e um rato.' },
+    options: [
+      { value: 'persegue', color: 'bg-yellow-500', illustration: 'https://picsum.photos/seed/p2_logic_2_op1/100/100', alt: 'Mangá de um gato correndo.' },
+      { value: 'conversa', color: 'bg-purple-500', illustration: 'https://picsum.photos/seed/p2_logic_2_op2/100/100', alt: 'Mangá de dois animais conversando.' },
+      { value: 'lê', color: 'bg-pink-500', illustration: 'https://picsum.photos/seed/p2_logic_2_op3/100/100', alt: 'Mangá de um animal com um livro.' },
+    ],
+    correctAnswer: 'persegue',
+    hint: 'O que os gatos geralmente fazem quando veem um rato?',
+    celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzdrZ3JpbXo0aGppZHRiZHI5MmVqcmFub3pvaGpyNmQzcXg0c2t0MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/agR5KkkxK6BvG/giphy.gif', alt: 'GIF de um gato de mangá com olhos de estrela.' },
+  },
+  // Add 8 more for Portuguese Level 2
+  { id: 'p2_logic_3', subject: Subject.Portuguese, level: Level.Two, prompt: 'O professor _________ a lição.', illustration: { src: 'https://picsum.photos/seed/p2_logic_3/400/200', alt: 'Mangá de professor na lousa.' }, options: [ { value: 'come', color: 'bg-blue-500' }, { value: 'ensina', color: 'bg-green-500' }, { value: 'joga', color: 'bg-red-500' } ], correctAnswer: 'ensina', hint: 'Qual é o trabalho de um professor?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3N5dDZna254Mm52d3M2ajU4bW1jZ2pkeGFoY2Jtdm9zZ3owM2I0eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6AfB6p14o4dfa/giphy.gif', alt: 'GIF de joinha.' } },
+  { id: 'p2_logic_4', subject: Subject.Portuguese, level: Level.Two, prompt: 'O pássaro _________ no céu.', illustration: { src: 'https://picsum.photos/seed/p2_logic_4/400/200', alt: 'Mangá de pássaro voando.' }, options: [ { value: 'nada', color: 'bg-yellow-500' }, { value: 'corre', color: 'bg-purple-500' }, { value: 'voa', color: 'bg-pink-500' } ], correctAnswer: 'voa', hint: 'Como os pássaros se movem no ar?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzdrZ3JpbXo0aGppZHRiZHI5MmVqcmFub3pvaGpyNmQzcXg0c2t0MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/agR5KkkxK6BvG/giphy.gif', alt: 'GIF de gato com olhos de estrela.' } },
+  { id: 'p2_logic_5', subject: Subject.Portuguese, level: Level.Two, prompt: 'O bombeiro _________ o incêndio.', illustration: { src: 'https://picsum.photos/seed/p2_logic_5/400/200', alt: 'Mangá de bombeiro com mangueira.' }, options: [ { value: 'apaga', color: 'bg-blue-500' }, { value: 'começa', color: 'bg-green-500' }, { value: 'assiste', color: 'bg-red-500' } ], correctAnswer: 'apaga', hint: 'O que um bombeiro faz com o fogo?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3N5dDZna254Mm52d3M2ajU4bW1jZ2pkeGFoY2Jtdm9zZ3owM2I0eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6AfB6p14o4dfa/giphy.gif', alt: 'GIF de joinha.' } },
+  { id: 'p2_logic_6', subject: Subject.Portuguese, level: Level.Two, prompt: 'O bebê _________ leite.', illustration: { src: 'https://picsum.photos/seed/p2_logic_6/400/200', alt: 'Mangá de bebê com mamadeira.' }, options: [ { value: 'lê', color: 'bg-yellow-500' }, { value: 'bebe', color: 'bg-purple-500' }, { value: 'escreve', color: 'bg-pink-500' } ], correctAnswer: 'bebe', hint: 'O que se faz com a mamadeira?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzdrZ3JpbXo0aGppZHRiZHI5MmVqcmFub3pvaGpyNmQzcXg0c2t0MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/agR5KkkxK6BvG/giphy.gif', alt: 'GIF de gato com olhos de estrela.' } },
+  { id: 'p2_logic_7', subject: Subject.Portuguese, level: Level.Two, prompt: 'O sol _________ o dia.', illustration: { src: 'https://picsum.photos/seed/p2_logic_7/400/200', alt: 'Mangá de um sol sorridente.' }, options: [ { value: 'esfria', color: 'bg-blue-500' }, { value: 'ilumina', color: 'bg-green-500' }, { value: 'apaga', color: 'bg-red-500' } ], correctAnswer: 'ilumina', hint: 'O que o sol nos dá durante o dia?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3N5dDZna254Mm52d3M2ajU4bW1jZ2pkeGFoY2Jtdm9zZ3owM2I0eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6AfB6p14o4dfa/giphy.gif', alt: 'GIF de joinha.' } },
+  { id: 'p2_logic_8', subject: Subject.Portuguese, level: Level.Two, prompt: 'O peixe _________ na água.', illustration: { src: 'https://picsum.photos/seed/p2_logic_8/400/200', alt: 'Mangá de um peixe no oceano.' }, options: [ { value: 'voa', color: 'bg-yellow-500' }, { value: 'anda', color: 'bg-purple-500' }, { value: 'nada', color: 'bg-pink-500' } ], correctAnswer: 'nada', hint: 'Como os peixes se movem?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzdrZ3JpbXo0aGppZHRiZHI5MmVqcmFub3pvaGpyNmQzcXg0c2t0MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/agR5KkkxK6BvG/giphy.gif', alt: 'GIF de gato com olhos de estrela.' } },
+  { id: 'p2_logic_9', subject: Subject.Portuguese, level: Level.Two, prompt: 'O astronauta _________ no espaço.', illustration: { src: 'https://picsum.photos/seed/p2_logic_9/400/200', alt: 'Mangá de um astronauta flutuando.' }, options: [ { value: 'planta', color: 'bg-blue-500' }, { value: 'flutua', color: 'bg-green-500' }, { value: 'mergulha', color: 'bg-red-500' } ], correctAnswer: 'flutua', hint: 'O que acontece com as coisas no espaço por causa da gravidade zero?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3N5dDZna254Mm52d3M2ajU4bW1jZ2pkeGFoY2Jtdm9zZ3owM2I0eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6AfB6p14o4dfa/giphy.gif', alt: 'GIF de joinha.' } },
+  { id: 'p2_logic_10', subject: Subject.Portuguese, level: Level.Two, prompt: 'O fazendeiro _________ a terra.', illustration: { src: 'https://picsum.photos/seed/p2_logic_10/400/200', alt: 'Mangá de um fazendeiro com um trator.' }, options: [ { value: 'pinta', color: 'bg-yellow-500' }, { value: 'voa', color: 'bg-purple-500' }, { value: 'cultiva', color: 'bg-pink-500' } ], correctAnswer: 'cultiva', hint: 'O que um fazendeiro faz para plantar alimentos?', celebrationMedia: { type: 'gif', src: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzdrZ3JpbXo0aGppZHRiZHI5MmVqcmFub3pvaGpyNmQzcXg0c2t0MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/agR5KkkxK6BvG/giphy.gif', alt: 'GIF de gato com olhos de estrela.' } },
+
+];
